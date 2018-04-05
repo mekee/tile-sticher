@@ -1,0 +1,5 @@
+-- generisanje tiles
+/home/datasoft/anaconda3/bin/python scraper.py --poly poly.geojson --zoom 6 --url http://wpc.4693.edgecastcdn.net/004693/tiles/area/1923/Z{z}/{y}/{x}.png?v=20 --out-dir tiles/1923
+
+-- tiles to png
+/home/datasoft/anaconda3/bin/python stitcher.py --dir tiles/1922 --out-file out/1922.png
